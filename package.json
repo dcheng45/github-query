@@ -1,0 +1,33 @@
+{
+  "name": "github-repo-ws",
+  "version": "1.0.0",
+  "description": "Github repository information",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "clean": "rm -rf ./dist",
+    "dev": "ts-node -r dotenv/config src/app.ts",
+    "build:debug": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcheng45/github-repo-ws.git"
+  },
+  "author": "Drew Cheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcheng45/github-repo-ws/issues"
+  },
+  "homepage": "https://github.com/dcheng45/github-repo-ws#readme",
+  "dependencies": {
+    "@octokit/graphql": "^4.6.1",
+    "@octokit/rest": "^18.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.35",
+    "dotenv": "^8.2.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  }
+}
